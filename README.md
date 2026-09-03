@@ -403,9 +403,6 @@ individual projects.
 |  | Self-conditioning probability $p_{\mathrm{sc}}$ | 0.50 |
 |  | Label-drop probability $p_{\mathrm{drop}}$ | 0.15 |
 | **EDM / Noise** | $\sigma_{\mathrm{data}}$ | 1.0 |
-|  | Training noise mean $P_{\mathrm{mean}}$ | `<fill from implementation>` |
-|  | Training noise std. $P_{\mathrm{std}}$ | `<fill from implementation>` |
-|  | Numerical stabilization $\delta$ | `<fill from implementation>` |
 | **Sampling** | Sampler | Heun predictor--corrector |
 |  | Final step | Euler step to $\sigma=0$ |
 |  | Noise schedule | Karras |
@@ -420,11 +417,7 @@ individual projects.
 |  | Correlation weight $\lambda_{\mathrm{corr}}$ | 0.05 |
 |  | Sliced-Wasserstein weight $\lambda_{\mathrm{swd}}$ | 0.02 |
 |  | SWD projection directions $K$ | 32 |
-|  | Structural batch limit $m_0$ | `<fill from implementation>` |
 |  | Structural batch size | $m_s=\min(m_0,n_+)$ |
-|  | Covariance shrinkage $\alpha$ | `<fill from implementation>` |
-|  | Covariance stabilization $\delta_C$ | `<fill from implementation>` |
-|  | Maximum structural noise $\sigma_{\mathrm{struct}}$ | `<fill from implementation>` |
 |  | Structural reference set | All real defective training samples |
 |  | Structural label | Defective class ($y=1$) |
 |  | Label dropping in structural path | Disabled |
